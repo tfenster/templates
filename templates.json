@@ -272,6 +272,45 @@
     "volumes": ["C:/temp/"]
   },
   {
+    "title": "Dynamics NAV Dev Environment",
+    "description": "Microsoft Dynamics NAV containers including SQL Server and IIS",
+    "categories": ["development"],
+    "platform": "windows",
+    "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
+    "image": "nav/generic:latest",
+	"registry": "navdocker.azurecr.io",
+    "ports": [
+      "443/tcp",
+	    "1433/tcp",
+  	  "80/tcp",
+	    "7045/tcp",
+	    "7046/tcp",
+  	  "7047/tcp",
+	    "7048/tcp",
+      "7049/tcp",
+  	  "7145/tcp",
+	    "7146/tcp",
+	    "7147/tcp",
+	    "7148/tcp",
+      "7149/tcp"
+    ],
+    "env": [
+      {
+        "name": "WindowsAuth",
+        "set": "Y"
+      },
+      {
+        "name": "username",
+        "label": "your username"
+      },
+      {
+        "name": "password",
+        "label": "your password"
+      }
+    ],
+	"volumes": ["C:/NAVDVD"]
+  },
+  {
     "title": "Solr",
     "description": "Open-source enterprise search platform",
     "categories": ["search-engine"],
