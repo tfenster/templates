@@ -294,6 +294,14 @@
         "name": "ACCEPT_EULA",
         "set": "Y"
       },
+      {
+        "name": "HTTP_PROXY",
+        "set": ""
+      },
+      {
+        "name": "HTTPS_PROXY",
+        "set": ""
+      },
 	  {
         "name": "WindowsAuth",
         "set": "Y"
