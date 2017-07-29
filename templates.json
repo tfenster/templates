@@ -296,11 +296,13 @@
       },
       {
         "name": "HTTP_PROXY",
-        "set": ""
+        "set": "",
+	"label": "HTTP PROXY"
       },
       {
         "name": "HTTPS_PROXY",
-        "set": ""
+        "set": "",
+	"label": "HTTPS_PROXY"
       },
 	  {
         "name": "WindowsAuth",
