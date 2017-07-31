@@ -237,7 +237,7 @@
     "platform": "windows",
     "note": "",
     "hostname": "grmpf",
-    "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
+    "logo": "https://cloudinovasi.id/assets/img/logos/redmine.png",
     "image": "microsoft/iis:nanoserver",
     "ports": [
       "80/tcp"
