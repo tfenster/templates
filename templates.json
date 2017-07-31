@@ -241,8 +241,7 @@
     "image": "microsoft/iis:nanoserver",
     "ports": [
       "80/tcp"
-    ],
-    "volumes": ["c:/inetpub/wwwroot/portainer-template/"]
+    ]
   },
   {
     "title": "Redmine",
