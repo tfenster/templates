@@ -297,12 +297,12 @@
       {
         "name": "HTTP_PROXY",
         "set": "",
-	"label": "HTTP PROXY"
+	"label": "HTTP proxy"
       },
       {
         "name": "HTTPS_PROXY",
         "set": "",
-	"label": "HTTPS_PROXY"
+	"label": "HTTPS proxy"
       },
 	  {
         "name": "WindowsAuth",
@@ -342,6 +342,16 @@
       "7149/tcp"
     ],
     "env": [
+      {
+        "name": "HTTP_PROXY",
+        "set": "",
+	"label": "HTTP proxy"
+      },
+      {
+        "name": "HTTPS_PROXY",
+        "set": "",
+	"label": "HTTPS proxy"
+      },
       {
         "name": "WindowsAuth",
         "set": "Y"
