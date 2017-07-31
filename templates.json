@@ -236,6 +236,7 @@
     "categories": ["development"],
     "platform": "windows",
     "note": "",
+    "hostname": "grmpf",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
     "image": "microsoft/iis:nanoserver",
     "ports": [
