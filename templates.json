@@ -272,6 +272,56 @@
     "volumes": ["C:/temp/"]
   },
   {
+    "title": "newsystem VersionEnvironment",
+	"description": "2017 CU5 - NSYS 17.1",
+	"logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
+	"image": "infoma-ver-env:2017-cu5-171",
+	"command": "powershell C:\\Run\\start.ps1",
+	"registry": "s00-nsys-reg.axians-infoma.de",
+  "platform": "windows",
+	"categories": ["nav", "infoma"],
+    "env": [
+      {
+        "name": "NonInteractive",
+        "set": "Y"
+      },
+      {
+        "name": "licensefile",
+        "set": "http://navfiles/dev.flf"
+      },
+      {
+        "name": "bakfile",
+        "set": "http://navfiles/newsystem_170100000.bak"
+      }
+    ],
+	"network": "MyTransparentNetwork"
+  },
+  {
+    "title": "NAV VersionEnvironment",
+	"description": "2017 CU5",
+	"logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
+	"image": "infoma-ver-env:2017-cu5",
+	"command": "powershell C:\\Run\\start.ps1",
+	"registry": "s00-nsys-reg.axians-infoma.de",
+  "platform": "windows",
+	"categories": ["nav", "infoma"],
+    "env": [
+      {
+        "name": "NonInteractive",
+        "set": "Y"
+      },
+      {
+        "name": "licensefile",
+        "set": "http://navfiles/dev.flf"
+      },
+      {
+        "name": "bakfile",
+        "set": "http://navfiles/newsystem_170100000.bak"
+      }
+    ],
+	"network": "MyTransparentNetwork"
+  },
+  {
     "title": "Dynamics NAV New Dev Preview",
     "description": "Microsoft Dynamics NAV container including SQL Server and IIS with the new dev environment enabled",
     "categories": ["development"],
