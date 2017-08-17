@@ -284,14 +284,6 @@
       {
         "name": "NonInteractive",
         "set": "Y"
-      },
-      {
-        "name": "licensefile",
-        "set": "http://navfiles/dev.flf"
-      },
-      {
-        "name": "bakfile",
-        "set": "http://navfiles/newsystem_170100000.bak"
       }
     ],
 	"network": "MyTransparentNetwork"
