@@ -368,9 +368,9 @@
   },
   {
     "title": "NAV Version-Environment",
-    "description": "2017 CU11",
+    "description": "2017 CU10",
     "logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
-    "image": "dynamics-nav:2017-cu11",
+    "image": "dynamics-nav:2017-cu10",
     "registry": "navdocker.azurecr.io",
     "platform": "windows",
     "categories": [
