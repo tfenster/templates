@@ -297,26 +297,26 @@
 	"network": "MyTransparentNetwork"
   },
   {
-    "title": "NAV VersionEnvironment",
-	"description": "2017 CU5",
+    "title": "NAV Version-Environment",
+	"description": "2017 CU11",
 	"logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
-	"image": "infoma-ver-env:2017-cu5",
-	"command": "powershell C:\\Run\\start.ps1",
-	"registry": "s00-nsys-reg.axians-infoma.de",
+	"image": "dynamics-nav:2017-cu11",
+	"command": "",
+	"registry": "navdocker.azurecr.io",
   "platform": "windows",
 	"categories": ["nav", "infoma"],
     "env": [
-      {
-        "name": "NonInteractive",
-        "set": "Y"
-      },
       {
         "name": "licensefile",
         "set": "http://navfiles/dev.flf"
       },
       {
-        "name": "bakfile",
-        "set": "http://navfiles/newsystem_170100000.bak"
+        "name": "ACCEPT_EULA",
+        "set": "Y"
+      },
+      {
+        "name": "ClickOnce",
+        "set": "Y"
       }
     ],
 	"network": "MyTransparentNetwork"
