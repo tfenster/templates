@@ -2,19 +2,25 @@
   {
     "title": "Registry",
     "description": "Docker image registry",
-    "categories": ["docker"],
+    "categories": [
+      "docker"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/registry.png",
     "image": "registry:latest",
     "ports": [
       "5000/tcp"
     ],
-    "volumes": ["/var/lib/registry"]
+    "volumes": [
+      "/var/lib/registry"
+    ]
   },
   {
     "title": "Nginx",
     "description": "High performance web server",
-    "categories": ["webserver"],
+    "categories": [
+      "webserver"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/nginx.png",
     "image": "nginx:latest",
@@ -22,36 +28,51 @@
       "80/tcp",
       "443/tcp"
     ],
-    "volumes": ["/etc/nginx", "/var/www/html"]
+    "volumes": [
+      "/etc/nginx",
+      "/var/www/html"
+    ]
   },
   {
     "title": "Httpd",
     "description": "Open-source HTTP server",
-    "categories": ["webserver"],
+    "categories": [
+      "webserver"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/httpd.png",
     "image": "httpd:latest",
     "ports": [
       "80/tcp"
     ],
-    "volumes": ["/usr/local/apache2/htdocs/"]
+    "volumes": [
+      "/usr/local/apache2/htdocs/"
+    ]
   },
   {
     "title": "Caddy",
     "description": "HTTP/2 web server with automatic HTTPS",
-    "categories": ["webserver"],
+    "categories": [
+      "webserver"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
     "image": "abiosoft/caddy:latest",
     "ports": [
-      "80/tcp", "443/tcp", "2015/tcp"
+      "80/tcp",
+      "443/tcp",
+      "2015/tcp"
     ],
-    "volumes": ["/root/.caddy"]
+    "volumes": [
+      "/root/.caddy"
+    ]
   },
   {
     "title": "MySQL",
     "description": "The most popular open-source database",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mysql.png",
     "image": "mysql:latest",
@@ -64,12 +85,16 @@
     "ports": [
       "3306/tcp"
     ],
-    "volumes": ["/var/lib/mysql"]
+    "volumes": [
+      "/var/lib/mysql"
+    ]
   },
   {
     "title": "MariaDB",
     "description": "Performance beyond MySQL",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mariadb.png",
     "image": "mariadb:latest",
@@ -82,12 +107,16 @@
     "ports": [
       "3306/tcp"
     ],
-    "volumes": ["/var/lib/mysql"]
+    "volumes": [
+      "/var/lib/mysql"
+    ]
   },
   {
     "title": "PostgreSQL",
     "description": "The most advanced open-source database",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/postgres.png",
     "image": "postgres:latest",
@@ -104,24 +133,32 @@
     "ports": [
       "5432/tcp"
     ],
-    "volumes": ["/var/lib/postgresql/data"]
+    "volumes": [
+      "/var/lib/postgresql/data"
+    ]
   },
   {
     "title": "Mongo",
     "description": "Open-source document-oriented database",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mongo.png",
     "image": "mongo:latest",
     "ports": [
       "27017/tcp"
     ],
-    "volumes": ["/data/db"]
+    "volumes": [
+      "/data/db"
+    ]
   },
   {
     "title": "CockroachDB",
     "description": "An open-source, survivable, strongly consistent, scale-out SQL database",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
     "image": "cockroachdb/cockroach:latest",
@@ -129,13 +166,17 @@
       "26257/tcp",
       "8080/tcp"
     ],
-    "volumes": ["/cockroach/cockroach-data"],
+    "volumes": [
+      "/cockroach/cockroach-data"
+    ],
     "command": "start --insecure"
   },
   {
     "title": "CrateDB",
     "description": "An open-source distributed SQL database",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/cratedb.png",
     "image": "crate:latest",
@@ -143,12 +184,16 @@
       "4200/tcp",
       "4300/tcp"
     ],
-    "volumes": ["/data"]
+    "volumes": [
+      "/data"
+    ]
   },
   {
     "title": "Elasticsearch",
     "description": "Open-source search and analytics engine",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/elasticsearch.png",
     "image": "elasticsearch:latest",
@@ -156,12 +201,16 @@
       "9200/tcp",
       "9300/tcp"
     ],
-    "volumes": ["/usr/share/elasticsearch/data"]
+    "volumes": [
+      "/usr/share/elasticsearch/data"
+    ]
   },
   {
     "title": "Minio",
     "description": "A distributed object storage server built for cloud applications and devops",
-    "categories": ["storage"],
+    "categories": [
+      "storage"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/minio.png",
     "image": "minio/minio:latest",
@@ -178,13 +227,18 @@
         "label": "Minio secret key"
       }
     ],
-    "volumes": ["/export", "/root/.minio"],
+    "volumes": [
+      "/export",
+      "/root/.minio"
+    ],
     "command": "server /export"
   },
   {
     "title": "Scality S3",
     "description": "Standalone AWS S3 protocol server",
-    "categories": ["storage"],
+    "categories": [
+      "storage"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/scality-s3.png",
     "image": "scality/s3server",
@@ -201,12 +255,17 @@
         "label": "Scality S3 secret key"
       }
     ],
-    "volumes": ["/usr/src/app/localData", "/usr/src/app/localMetadata"]
+    "volumes": [
+      "/usr/src/app/localData",
+      "/usr/src/app/localMetadata"
+    ]
   },
   {
     "title": "SQL Server",
     "description": "Microsoft SQL Server on Linux",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
@@ -228,7 +287,9 @@
   {
     "title": "SQL Server",
     "description": "Microsoft SQL Server for Windows containers",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "windows",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
@@ -246,12 +307,16 @@
         "label": "SA password"
       }
     ],
-    "volumes": ["C:/temp/"]
+    "volumes": [
+      "C:/temp/"
+    ]
   },
   {
     "title": "SQL Server Express",
     "description": "Microsoft SQL Server Express for Windows containers",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "windows",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
@@ -269,17 +334,22 @@
         "label": "SA password"
       }
     ],
-    "volumes": ["C:/temp/"]
+    "volumes": [
+      "C:/temp/"
+    ]
   },
   {
     "title": "newsystem VersionEnvironment",
-	"description": "2017 CU5 - NSYS 17.1",
-	"logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
-	"image": "infoma-ver-env:2017-cu5-171",
-	"command": "powershell C:\\Run\\start.ps1",
-	"registry": "s00-nsys-reg.axians-infoma.de",
-  "platform": "windows",
-	"categories": ["nav", "infoma"],
+    "description": "2017 CU5 - NSYS 17.1",
+    "logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
+    "image": "infoma-ver-env:2017-cu5-171",
+    "command": "powershell C:\\Run\\start.ps1",
+    "registry": "s00-nsys-reg.axians-infoma.de",
+    "platform": "windows",
+    "categories": [
+      "nav",
+      "infoma"
+    ],
     "env": [
       {
         "name": "NonInteractive",
@@ -294,17 +364,19 @@
         "set": ""
       }
     ],
-	"network": "MyTransparentNetwork"
+    "network": "MyTransparentNetwork"
   },
   {
     "title": "NAV Version-Environment",
-	"description": "2017 CU11",
-	"logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
-	"image": "dynamics-nav:2017-cu11",
-	"command": "",
-	"registry": "navdocker.azurecr.io",
-  "platform": "windows",
-	"categories": ["nav", "infoma"],
+    "description": "2017 CU11",
+    "logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
+    "image": "dynamics-nav:2017-cu11",
+    "registry": "navdocker.azurecr.io",
+    "platform": "windows",
+    "categories": [
+      "nav",
+      "infoma"
+    ],
     "env": [
       {
         "name": "licensefile",
@@ -319,24 +391,26 @@
         "set": "Y"
       }
     ],
-	"network": "MyTransparentNetwork"
+    "network": "MyTransparentNetwork"
   },
   {
     "title": "Dynamics NAV New Dev Preview",
     "description": "Microsoft Dynamics NAV container including SQL Server and IIS with the new dev environment enabled",
-    "categories": ["development"],
+    "categories": [
+      "development"
+    ],
     "platform": "windows",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
     "image": "dynamics-nav:devpreview",
-	"registry": "navdocker.azurecr.io",
+    "registry": "navdocker.azurecr.io",
     "ports": [
       "443/tcp",
-	    "1433/tcp",
-  	  "80/tcp",
-	    "7045/tcp",
-	    "7046/tcp",
-  	  "7047/tcp",
-	    "7048/tcp",
+      "1433/tcp",
+      "80/tcp",
+      "7045/tcp",
+      "7046/tcp",
+      "7047/tcp",
+      "7048/tcp",
       "7049/tcp"
     ],
     "env": [
@@ -347,14 +421,14 @@
       {
         "name": "HTTP_PROXY",
         "set": "",
-	"label": "HTTP proxy"
+        "label": "HTTP proxy"
       },
       {
         "name": "HTTPS_PROXY",
         "set": "",
-	"label": "HTTPS proxy"
+        "label": "HTTPS proxy"
       },
-	  {
+      {
         "name": "WindowsAuth",
         "set": "Y"
       },
@@ -371,36 +445,38 @@
   {
     "title": "Dynamics NAV Generic",
     "description": "Microsoft Dynamics NAV container including SQL Server and IIS (need to provide your own NAVDVD)",
-    "categories": ["development"],
+    "categories": [
+      "development"
+    ],
     "platform": "windows",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
     "image": "nav/generic:latest",
-	"registry": "navdocker.azurecr.io",
+    "registry": "navdocker.azurecr.io",
     "ports": [
       "443/tcp",
-	    "1433/tcp",
-  	  "80/tcp",
-	    "7045/tcp",
-	    "7046/tcp",
-  	  "7047/tcp",
-	    "7048/tcp",
+      "1433/tcp",
+      "80/tcp",
+      "7045/tcp",
+      "7046/tcp",
+      "7047/tcp",
+      "7048/tcp",
       "7049/tcp",
-  	  "7145/tcp",
-	    "7146/tcp",
-	    "7147/tcp",
-	    "7148/tcp",
+      "7145/tcp",
+      "7146/tcp",
+      "7147/tcp",
+      "7148/tcp",
       "7149/tcp"
     ],
     "env": [
       {
         "name": "HTTP_PROXY",
         "set": "",
-	"label": "HTTP proxy"
+        "label": "HTTP proxy"
       },
       {
         "name": "HTTPS_PROXY",
         "set": "",
-	"label": "HTTPS proxy"
+        "label": "HTTPS proxy"
       },
       {
         "name": "WindowsAuth",
@@ -415,12 +491,16 @@
         "label": "your password"
       }
     ],
-	"volumes": ["C:/NAVDVD"]
+    "volumes": [
+      "C:/NAVDVD"
+    ]
   },
   {
     "title": "Portainer templates on IIS",
     "description": "Portainer Templates on IIS / Nano Server",
-    "categories": ["development"],
+    "categories": [
+      "development"
+    ],
     "platform": "windows",
     "note": "",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
@@ -428,36 +508,48 @@
     "ports": [
       "80/tcp"
     ],
-    "volumes": ["c:/inetpub/wwwroot/portainer-template/"]
+    "volumes": [
+      "c:/inetpub/wwwroot/portainer-template/"
+    ]
   },
   {
     "title": "Solr",
     "description": "Open-source enterprise search platform",
-    "categories": ["search-engine"],
+    "categories": [
+      "search-engine"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/solr.png",
     "image": "solr:latest",
     "ports": [
       "8983/tcp"
     ],
-    "volumes": ["/opt/solr/mydata"]
+    "volumes": [
+      "/opt/solr/mydata"
+    ]
   },
   {
     "title": "Redis",
     "description": "Open-source in-memory data structure store",
-    "categories": ["database"],
+    "categories": [
+      "database"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/redis.png",
     "image": "redis:latest",
     "ports": [
       "6379/tcp"
     ],
-    "volumes": ["/data"]
+    "volumes": [
+      "/data"
+    ]
   },
   {
     "title": "RabbitMQ",
     "description": "Highly reliable enterprise messaging system",
-    "categories": ["messaging"],
+    "categories": [
+      "messaging"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/rabbitmq.png",
     "image": "rabbitmq:latest",
@@ -465,24 +557,35 @@
       "5671/tcp",
       "5672/tcp"
     ],
-    "volumes": ["/var/lib/rabbitmq"]
+    "volumes": [
+      "/var/lib/rabbitmq"
+    ]
   },
   {
     "title": "Plesk",
     "description": "WebOps platform and hosting control panel",
-    "categories": ["CMS"],
+    "categories": [
+      "CMS"
+    ],
     "platform": "linux",
     "note": "Default credentials: admin / changeme",
     "logo": "https://cloudinovasi.id/assets/img/logos/plesk.png",
     "image": "plesk/plesk:preview",
     "ports": [
-      "21/tcp", "80/tcp", "443/tcp", "8880/tcp", "8443/tcp", "8447/tcp"
+      "21/tcp",
+      "80/tcp",
+      "443/tcp",
+      "8880/tcp",
+      "8443/tcp",
+      "8447/tcp"
     ]
   },
   {
     "title": "WordPress",
     "description": "A free and open-source CMS",
-    "categories": ["CMS"],
+    "categories": [
+      "CMS"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
     "image": "wordpress:latest",
@@ -500,12 +603,16 @@
     "ports": [
       "80/tcp"
     ],
-    "volumes": ["/var/www/html"]
+    "volumes": [
+      "/var/www/html"
+    ]
   },
   {
     "title": "Joomla",
     "description": "Another free and open-source CMS",
-    "categories": ["CMS"],
+    "categories": [
+      "CMS"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/joomla.png",
     "image": "joomla:latest",
@@ -523,36 +630,48 @@
     "ports": [
       "80/tcp"
     ],
-    "volumes": ["/var/www/html"]
+    "volumes": [
+      "/var/www/html"
+    ]
   },
   {
     "title": "Drupal",
     "description": "Open-source content management framework",
-    "categories": ["CMS"],
+    "categories": [
+      "CMS"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/drupal.png",
     "image": "drupal:latest",
     "ports": [
       "80/tcp"
     ],
-    "volumes": ["/var/www/html"]
+    "volumes": [
+      "/var/www/html"
+    ]
   },
   {
     "title": "Plone",
     "description": "A free and open-source CMS built on top of Zope",
-    "categories": ["CMS"],
+    "categories": [
+      "CMS"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/plone.png",
     "image": "plone:latest",
     "ports": [
       "8080/tcp"
     ],
-    "volumes": ["/data"]
+    "volumes": [
+      "/data"
+    ]
   },
   {
     "title": "Magento 2",
     "description": "Open-source e-commerce platform",
-    "categories": ["CMS"],
+    "categories": [
+      "CMS"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/magento.png",
     "image": "alankent/gsd:latest",
@@ -561,12 +680,16 @@
       "3000/tcp",
       "3001/tcp"
     ],
-    "volumes": ["/var/www/html/"]
+    "volumes": [
+      "/var/www/html/"
+    ]
   },
   {
     "title": "Mautic",
     "description": "Open-source marketing automation platform",
-    "categories": ["marketing"],
+    "categories": [
+      "marketing"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mautic.png",
     "image": "mautic/mautic:latest",
@@ -584,12 +707,16 @@
     "ports": [
       "80/tcp"
     ],
-    "volumes": ["/var/www/html"]
+    "volumes": [
+      "/var/www/html"
+    ]
   },
   {
     "title": "Wowza",
     "description": "Streaming media server",
-    "categories": ["streaming"],
+    "categories": [
+      "streaming"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/wowza.png",
     "image": "sameersbn/wowza:4.1.2-8",
@@ -610,12 +737,16 @@
       "8087/tcp",
       "8088/tcp"
     ],
-    "volumes": ["/var/lib/wowza"]
+    "volumes": [
+      "/var/lib/wowza"
+    ]
   },
   {
     "title": "Jenkins",
     "description": "Open-source continuous integration tool",
-    "categories": ["continuous-integration"],
+    "categories": [
+      "continuous-integration"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/jenkins.png",
     "image": "jenkins:latest",
@@ -623,24 +754,32 @@
       "8080/tcp",
       "50000/tcp"
     ],
-    "volumes": ["/var/jenkins_home"]
+    "volumes": [
+      "/var/jenkins_home"
+    ]
   },
   {
     "title": "Redmine",
     "description": "Open-source project management tool",
-    "categories": ["project-management"],
+    "categories": [
+      "project-management"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/redmine.png",
     "image": "redmine:latest",
     "ports": [
       "3000/tcp"
     ],
-    "volumes": ["/usr/src/redmine/files"]
+    "volumes": [
+      "/usr/src/redmine/files"
+    ]
   },
   {
     "title": "Odoo",
     "description": "Open-source business apps",
-    "categories": ["project-management"],
+    "categories": [
+      "project-management"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/odoo.png",
     "image": "odoo:latest",
@@ -662,25 +801,37 @@
     "ports": [
       "8069/tcp"
     ],
-    "volumes": ["/var/lib/odoo", "/mnt/extra-addons"]
+    "volumes": [
+      "/var/lib/odoo",
+      "/mnt/extra-addons"
+    ]
   },
   {
     "title": "Urbackup",
     "description": "Open-source network backup",
-    "categories": ["backup"],
+    "categories": [
+      "backup"
+    ],
     "platform": "linux",
     "note": "This application web interface is exposed on the port 55414 inside the container.",
     "logo": "https://cloudinovasi.id/assets/img/logos/urbackup.png",
     "image": "cfstras/urbackup",
     "ports": [
-      "55413/tcp", "55414/tcp", "55415/tcp", "35622/tcp"
+      "55413/tcp",
+      "55414/tcp",
+      "55415/tcp",
+      "35622/tcp"
     ],
-    "volumes": ["/var/urbackup"]
+    "volumes": [
+      "/var/urbackup"
+    ]
   },
   {
     "title": "CommandBox",
     "description": "ColdFusion (CFML) CLI",
-    "categories": ["development"],
+    "categories": [
+      "development"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ortussolutions-commandbox.png",
     "image": "ortussolutions/commandbox:latest",
@@ -691,13 +842,16 @@
       }
     ],
     "ports": [
-      "8080/tcp", "8443/tcp"
+      "8080/tcp",
+      "8443/tcp"
     ]
   },
   {
     "title": "ContentBox",
     "description": "Open-source modular CMS",
-    "categories": ["CMS"],
+    "categories": [
+      "CMS"
+    ],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ortussolutions-contentbox.png",
     "image": "ortussolutions/contentbox:latest",
@@ -716,8 +870,12 @@
       }
     ],
     "ports": [
-      "8080/tcp", "8443/tcp"
+      "8080/tcp",
+      "8443/tcp"
     ],
-    "volumes": ["/data/contentbox/db", "/app/includes/shared/media"]
+    "volumes": [
+      "/data/contentbox/db",
+      "/app/includes/shared/media"
+    ]
   }
 ]
