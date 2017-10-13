@@ -86,7 +86,7 @@
     "description": "2017 CU10",
     "logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
     "image": "dynamics-nav:2017-cu10-de",
-    "registry": "navdocker",
+    "registry": "navdocker.azurecr.io",
     "platform": "windows",
     "categories": [
       "nav",
