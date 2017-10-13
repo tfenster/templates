@@ -95,7 +95,7 @@
     "env": [
       {
         "name": "licensefile",
-        "set": "http://navfiles/dev.flf"
+        "set": "c:/install/Dev_03_2017.flf"
       },
       {
         "name": "ACCEPT_EULA",
@@ -108,12 +108,12 @@
     ],
     "volumes": [
       {
-        "container": "c:/install",
-        "bind": "c:/install"
+        "container": "c/install",
+        "bind": "c/install"
       },
       { 
-        "container": " C:/github/nav-docker/Run/my",
-        "bind": "c:/run/my"
+        "container": "C/github/nav-docker/Run/my",
+        "bind": "c/run/my"
       }
     ],
     "network": "MyTransparentNetwork"
