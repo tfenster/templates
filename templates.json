@@ -108,8 +108,8 @@
     ],
     "volumes": [
       {
-        "container": "c:\\install",
-        "bind": "c:\\install"
+        "container": "c:\install",
+        "bind": "c:\install"
       },
       { 
         "container": " C:\github\nav-docker\Run\my",
