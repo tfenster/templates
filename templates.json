@@ -86,7 +86,7 @@
     "description": "2017 CU10",
     "logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
     "image": "dynamics-nav:2017-cu10-de",
-    "registry": "navdocker.azurecr.io",
+    "registry": "s00-nsys-reg.axians-infoma.de",
     "platform": "windows",
     "categories": [
       "nav",
@@ -108,12 +108,12 @@
     ],
     "volumes": [
       {
-        "container": "c:/install",
-        "bind": "c:/install"
+        "container": "c:\\install",
+        "bind": "c:\\install"
       },
       { 
-        "container": " C:/github/nav-docker/Run/my",
-        "bind": "c:/run/my"
+        "container": " C:\\github\\nav-docker\\Run\\my",
+        "bind": "c:\\run\\my"
       }
     ],
     "network": "MyTransparentNetwork"
