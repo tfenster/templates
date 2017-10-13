@@ -108,12 +108,8 @@
     ],
     "volumes": [
       {
-        "container": "/c/install",
-        "bind": "/c/install"
-      },
-      { 
-        "container": "/C/github/nav-docker/Run/my",
-        "bind": "/c/run/my"
+        "container": "c:\\run\\my",
+        "bind": "c:\\github\\nav-docker\\run\\my"
       }
     ],
     "network": "MyTransparentNetwork"
