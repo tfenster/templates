@@ -82,8 +82,8 @@
     "network": "MyTransparentNetwork"
   },
   {
-    "title": "Cronus Versionsumgebung",
-    "description": "2017 CU10",
+    "title": "Cronus 2017 CU10",
+    "description": "Versionsumgebung",
     "logo": "https://meine.infoma.de/webinfoma/iupdate.nsf/files/logo.gif/$file/logo.gif",
     "image": "dynamics-nav:2017-cu10-de",
     "registry": "s00-nsys-reg.axians-infoma.de",
@@ -112,8 +112,8 @@
         "bind": "c:\\install"
       },
       { 
-        "container": " C:\\github\\nav-docker\\Run\\my",
-        "bind": "c:\\run\\my"
+        "container": " C:\github\nav-docker\Run\my",
+        "bind": "c:\run\my"
       }
     ],
     "network": "MyTransparentNetwork"
