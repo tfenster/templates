@@ -126,8 +126,7 @@
     ],
     "platform": "windows",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
-    "image": "dynamics-nav:devpreview",
-    "registry": "navdocker.azurecr.io",
+    "image": "microsoft/dynamics-nav:devpreview",
     "ports": [
       "443/tcp",
       "1433/tcp",
